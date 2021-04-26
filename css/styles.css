@@ -1,0 +1,102 @@
+:root {
+ --colr:   rgb(2, 117, 216)     ;
+ --divcolor:rgba(0, 0, 0, 0.5);
+}
+
+
+body {
+  font-size:medium;
+  min-width: 300px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(190, 190, 190);
+}
+
+[type='text'],[type='email'],[type='password'],[type='url'],[type='date'],[type='number']{
+  border-radius: 10px;
+  float: right;
+}
+table{
+  
+  background-color: #073a4700;
+  text-align: center; 
+  width:100%;
+  margin-left: 0%;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+th{
+  color: rgb(87, 118, 145);
+  background-color:rgb(41, 43, 44);
+}
+td {border: 1px #DDD solid; 
+  padding: 10px; 
+  cursor: pointer;
+}
+.selected {
+  background-color: rgba(0, 255, 115, 0.411);
+  color: rgb(255, 255, 255);
+}
+#login, #reg,.centop{
+  box-shadow: 3px 3px 3px 3px rgb(0, 0, 0); 
+  padding: 2%;
+  margin-top: 2%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 40px;
+  background-color: var(--divcolor);
+
+}
+
+#login, #reg{
+  width: 20%;
+  min-width: 300px;
+}
+/* /////////////// list-page */
+
+#listbar{
+  box-shadow: 3px 3px 3px 3px rgb(0, 0, 0); 
+  padding: 2%;
+
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 40px;
+  background-color: var(--divcolor);
+ 
+}
+#contbar { 
+  
+  background-color: var(--divcolor);
+  box-shadow: 3px 3px 3px 3px rgb(0, 0, 0); 
+   
+}
+#contable{
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.centop {
+  width: 100%;
+  display: inline-block;
+  font-size: large;
+
+}
+#cen1,#cen2{
+ 
+  padding: 5%;
+}
+.col-xl-3{
+  box-shadow: 3px 3px 3px 3px rgb(0, 0, 0); 
+  margin-top:5px;
+  width:40%;
+  padding: 2%;
+  margin-top: 2%;
+  margin-right: 2%;
+
+  margin-left: auto;
+  border-radius: 40px;
+  background-color: var(--divcolor);
+  display: inline-block;
+  font-size: large;
+}
+
+
+
