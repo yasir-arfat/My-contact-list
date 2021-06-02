@@ -1,2 +1,2 @@
-<img src="screenshot5.jpg">
+<img src="screenshot_5.jpg">
 
