@@ -1,102 +1,112 @@
+
+
 :root {
- --colr:   rgb(2, 117, 216)     ;
- --divcolor:rgba(0, 0, 0, 0.5);
+  --colr:   #3606b5     ;
+ --divcolor:rgba(0, 0, 0, 0.664);
 }
 
 
 body {
   font-size:medium;
+  border: 0;
+  margin: 0px;
+  padding: 0px;
   min-width: 300px;
   color: rgb(255, 255, 255);
-  background-color: rgb(190, 190, 190);
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-[type='text'],[type='email'],[type='password'],[type='url'],[type='date'],[type='number']{
-  border-radius: 10px;
-  float: right;
-}
-table{
-  
-  background-color: #073a4700;
-  text-align: center; 
-  width:100%;
-  margin-left: 0%;
-  font-size: 15px;
-  color: rgb(255, 255, 255);
-}
-th{
-  color: rgb(87, 118, 145);
-  background-color:rgb(41, 43, 44);
-}
-td {border: 1px #DDD solid; 
-  padding: 10px; 
-  cursor: pointer;
-}
-.selected {
-  background-color: rgba(0, 255, 115, 0.411);
-  color: rgb(255, 255, 255);
-}
-#login, #reg,.centop{
-  box-shadow: 3px 3px 3px 3px rgb(0, 0, 0); 
+#col2 {
+  display: inline-block;
   padding: 2%;
-  margin-top: 2%;
+  position: relative;
+  margin-top: 10%;
   margin-right: auto;
   margin-left: auto;
+  border-right: 5px solid var(--colr);
   border-radius: 40px;
+  width: 20%;
   background-color: var(--divcolor);
-
+  min-width: 300px;
 }
 
-#login, #reg{
+#side{
+  position: absolute;
+  display: inline-block;
+  padding: 2%;
+  right: 0%;
+  height: 80%;
   width: 20%;
   min-width: 300px;
-}
-/* /////////////// list-page */
-
-#listbar{
-  box-shadow: 3px 3px 3px 3px rgb(0, 0, 0); 
-  padding: 2%;
-
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 40px;
   background-color: var(--divcolor);
- 
+  border-left: 5px solid var(--colr);
+  border-bottom-left-radius: 40px;
 }
-#contbar { 
+
+/* absolute, relative, fixed */
+
+/* ///////////////end landing page */
+input[type="text"]  {
+  border: 0;
+  margin: 0;
+  float: right;
+  border-radius: 40px;
+}
+#userinfo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto;
+  width: 200px;
+  background-color:var(--divcolor);
+  color: white;
+  border-bottom-left-radius: 40px;
+}
+
+#listbar { 
   
-  background-color: var(--divcolor);
-  box-shadow: 3px 3px 3px 3px rgb(0, 0, 0); 
-   
-}
-#contable{
-  max-height: 400px;
-  overflow-y: scroll;
-}
-.centop {
-  width: 100%;
-  display: inline-block;
-  font-size: large;
+  position: absolute;
+  top:auto;
 
+left: 2%;
+  height:80%;
+  width: 400px;
+  background-color:  var(--divcolor);
+  border-right: 5px solid var(--colr);
+  border-bottom-right-radius: 40px;
 }
-#cen1,#cen2{
- 
-  padding: 5%;
-}
-.col-xl-3{
-  box-shadow: 3px 3px 3px 3px rgb(0, 0, 0); 
-  margin-top:5px;
-  width:40%;
-  padding: 2%;
+.centop,.cenbot {
+ position: relative;
+  display: inline-block;
+  
+
   margin-top: 2%;
-  margin-right: 2%;
-
-  margin-left: auto;
-  border-radius: 40px;
-  background-color: var(--divcolor);
-  display: inline-block;
+  margin-left: 25%;
   font-size: large;
+
+  height: auto;
+  width: 60%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+
+  background-color: var(--divcolor);
+ }
+.centop { 
+  border-bottom: 5px solid var(--colr);
+  border-bottom-left-radius: 40px;
+}
+
+.cenbot {
+border-top: 5px solid var(--colr);
+border-top-left-radius: 40px;
 }
 
 
-
+#cen1,
+#cen2,
+#cen3 {
+  padding: 40px;
+}
